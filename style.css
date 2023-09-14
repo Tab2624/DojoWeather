@@ -1,0 +1,110 @@
+/* useful classes */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: lighter;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-column {
+  flex: column;
+}
+.align-center {
+  align-items: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.margin-left {
+  margin-left: 40px;
+}
+
+.gap {
+  gap: 15%;
+}
+
+.vertical-align {
+  vertical-align: top;
+}
+
+/* Nav */
+.headerBox {
+  background-color: #9fc5f8;
+  color: white;
+}
+
+.joseBox {
+  border-bottom: 3px solid black;
+}
+
+/* Container */
+
+.weatherIcon {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.dayBox {
+  margin-top: 30px;
+  background-color: #eeeeee;
+}
+
+.high {
+  color: red;
+}
+
+.low {
+  color: blue;
+}
+
+/* Cookies Box */
+
+.cookiesBox {
+  border: 4px solid black;
+  background-color: #eeeeee;
+  height: 125px;
+  position: fixed;
+  bottom: 20px;
+  left: 15%;
+}
+
+.cookie {
+  height: 100px;
+}
+
+.cookieTimeBox {
+  width: 450px;
+}
+
+#btn {
+  background-color: #9fc5f8;
+  box-shadow: 5px 5px 0px;
+  border-color: black;
+  margin-right: 10px;
+}

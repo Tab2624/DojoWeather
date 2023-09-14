@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navBar -->
+    <div class="flex headerBox align-center justify-evenly">
+      <h1>DojoWeather</h1>
+      <div class="flex gap">
+        <h3 onclick="loading(this)">Burbank</h3>
+        <h3 onclick="loading(this)">Chicago</h3>
+        <h3 onclick="loading(this)">Dallas</h3>
+      </div>
+    </div>
+    <!-- San Jose Box -->
+    <div class="flex joseBox justify-evenly align-center">
+      <h2>San Jose</h2>
+      <div class="flex gap align-center">
+        <p>show temperature in</p>
+        <select name="f-cBar" onchange="tempConversion(this)">
+          <option>C°</option>
+          <option>F°</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Container -->
+    <div>
+      <div class="flex justify-evenly align-center">
+        <!-- weather display divs -->
+        <div class="text-align dayBox">
+          <h3 class="margin-top">Today</h3>
+          <img
+            src="assets/some_rain.png"
+            alt="Rain.jpg"
+            class="weatherIcon margin-top"
+          />
+          <p class="margin-top">some rain</p>
+          <div class="flex justify-around">
+            <h3 class="high margin-top tempchange">24</h3>
+            <h3 class="low margin-top tempchange">18</h3>
+          </div>
+        </div>
+        <div class="text-align dayBox">
+          <h3 class="margin-top">Tomorrow</h3>
+          <img
+            src="assets/some_sun.png"
+            alt="Sun.jpg"
+            class="weatherIcon margin-top"
+          />
+          <p class="margin-top">some sun</p>
+          <div class="flex justify-around">
+            <h3 class="high margin-top tempchange">27</h3>
+            <h3 class="low margin-top tempchange">19</h3>
+          </div>
+        </div>
+        <div class="text-align dayBox">
+          <h3 class="margin-top">Friday</h3>
+          <img
+            src="assets/some_clouds.png"
+            alt="Clouds.jpg"
+            class="weatherIcon margin-top"
+          />
+          <p class="margin-top">some clouds</p>
+          <div class="flex justify-around">
+            <h3 class="high margin-top tempchange">21</h3>
+            <h3 class="low margin-top tempchange">16</h3>
+          </div>
+        </div>
+        <div class="text-align dayBox">
+          <h3 class="margin-top">Saturday</h3>
+          <img
+            src="assets/some_sun.png"
+            alt="Sun.jpg"
+            class="weatherIcon margin-top"
+          />
+          <p class="margin-top">some sun</p>
+          <div class="flex justify-around">
+            <h3 class="high margin-top tempchange">26</h3>
+            <h3 class="low margin-top tempchange">21</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cookies Box -->
+      <div class="flex align-center cookiesBox justify-evenly" id="crumble">
+        <img src="assets/cookie.png" alt="Cookie" id="cookie" />
+        <div class="cookieTimeBox margin-left">
+          <h3>Stop! Cookie time</h3>
+          <p class="margin-top">
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyse our
+            traffic.
+            <a href="#">Read more...</a>
+          </p>
+        </div>
+        <button
+          id="btn"
+          class="margin-left"
+          onclick="removeCookies('#crumble')"
+        >
+          I Accept
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
